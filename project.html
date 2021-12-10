@@ -1,0 +1,31 @@
+
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title></title>
+ <script type="text/javascript">
+ function dayAndNight() {
+   var target = document.querySelector('body');
+   var alist = document.querySelectorAll('a');
+   if(document.querySelector ('input').value === 'night') {
+     target.style.backgroundColor = 'black';
+     target.style.color= 'white';
+     }
+
+     document.querySelector ('input').value = 'day';
+   } else {
+     target.style.backgroundColor = 'white';
+     target.style.color = 'black';
+     document.querySelector ('input').value = 'night';
+   }
+ }
+ </script>
+ </head>
+ <body>
+   <h1><a href="#">Night and Day</a></h1>
+<input type="button" value="night" onclick="
+dayAndNight();
+">
+
+ </body>
+</html>
